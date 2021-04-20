@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html lang="ru" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Анкета</title>
+
+    <link rel="stylesheet" th:href="@{mysite.css}">
+<!--    <script type="text/javascript" th:src="@{https://code.jquery.com/jquery-1.10.2.js}"></script>-->
+<!--    <script type="text/javascript" th:src="@{https://code.jquery.com/ui/1.10.2/jquery-ui.js}"></script>-->
+<!--    <script>-->
+<!--        $( function() {-->
+<!--            $( "#slider-range" ).slider({-->
+<!--                range: true,-->
+<!--                min: 0,-->
+<!--                max: 500,-->
+<!--                values: [ 75, 300 ],-->
+<!--                slide: function( event, ui ) {-->
+<!--                    $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );-->
+<!--                }-->
+<!--            });-->
+<!--            $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +-->
+<!--                " - $" + $( "#slider-range" ).slider( "values", 1 ) );-->
+<!--        } );-->
+<!--    </script>-->
+</head>
+<body>
+<!--<style>-->
+<!--    body-->
+<!--    {background-color: #3a5809-->
+<!--    }-->
+<!--</style>-->
+<h1>Подходящие параментры для дома</h1>
+<form action="#" th:action="@{/onto}" th:object="${onto}" method="post">
+    <p>Количество людей: <input type="number" min="1" max="10" th:field="*{people}" /></p>
+    <p>Наличие детей:</p>
+    <p><input type="radio" name="child" th:field="*{child}" value="true"/>Yes</p>
+    <p><input type="radio" name="child" th:field="*{child}" value="false"/>No</p>
+    <p>Наличие пожилых и инвалидов:</p>
+    <p><input type="radio" name="retiree" th:field="*{retiree}" value="true"/>Yes</p>
+    <p><input type="radio" name="retiree" th:field="*{retiree}" value="false"/>No</p>
+
+    <p><b>Насколько просторным будет дом?</b></p>
+    <p><input type="radio" name="comf" th:field="*{comfort}" value="compact"/>Компактным</p>
+    <p><input type="radio" name="comf" th:field="*{comfort}" value="comfort"/>Комфортным</p>
+    <p><input type="radio" name="comf" th:field="*{comfort}" value="prostor" checked/>Просторным</p>
+    <p>Количество комнат для хобби и работы: <input type="number" min="0" max="10" th:field="*{cabinet}" /></p>
+<!--    <p><b>Цена?</b></p>-->
+<!--    <p><input type="range" min="12" max="1000" th:field="*{minPrice}" class="slider" required/></p>-->
+<!--    <p><input type="range" min="12" max="1000" th:field="*{maxPrice}" class="slider" required/></p>-->
+<!--    <span class="multi-range">-->
+<!--    <input type="range" min="0" max="10000000" value="5" th:field="*{minPrice}">-->
+<!--    <input type="range" min="0" max="10000000" value="45" th:field="*{maxPrice}">-->
+<!--    </span>-->
+    <p>Минимальная цена: <input type="number" min="1" max="1000" th:field="*{minPrice}" /></p>
+    <p>Максимальная цена: <input type="number" min="0" max="8000" th:field="*{maxPrice}" /></p>
+
+
+    <p>Подходящее количество этажей</p>
+    <input type="range" min="0" max="5" value="1" th:field="*{floor}">
+<!--    <label><input type="checkbox" name="floor" th:field="*{floor}" value="1"> 1</label>-->
+<!--    <label><input type="checkbox" name="floor" th:field="*{floor}" value="2"> 2</label>-->
+<!--    <label><input type="checkbox" name="floor" th:field="*{floor}" value="3"> 3</label>-->
+<!--    <label><input type="checkbox" name="floor" th:field="*{floor}" value="4"> 4</label>-->
+<!--    <label><input type="checkbox" name="floor" th:field="*{floor}" value="5"> 5</label>-->
+
+    <p>Город: <input type="text" th:field="*{city}" /></p>
+
+    <p><b>Какое освещение вам комфортно?</b></p>
+    <p><input type="radio" name="light" th:field="*{light}" value="dark"/>Приглушенное</p>
+    <p><input type="radio" name="light" th:field="*{light}" value="lightly"/>Светлое</p>
+    <p><input type="radio" name="light" th:field="*{light}" value="nomatter" checked/>Не имеет значения</p>
+
+    <p>Наличие машины</p>
+    <p><input type="radio" name="car" th:field="*{car}" value="true"/>Yes</p>
+    <p><input type="radio" name="car" th:field="*{car}" value="false"/>No</p>
+
+    <p><input type="submit" value="Отправить" /> <input type="reset" value="Сбросить" /></p>
+</form>
+
+</body>
+</html>

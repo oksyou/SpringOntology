@@ -1,0 +1,1082 @@
+@prefix : <http://www.semanticweb.org/dande/ontologies/house#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/dande/ontologies/house> .
+
+<http://www.semanticweb.org/dande/ontologies/house> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/dande/ontologies/house#Дом
+:Дом rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Комната
+:Комната rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#имеет
+:имеет rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#имеетВысоту
+:имеетВысоту rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#имеетГараж
+:имеетГараж rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :Дом .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#имеетГардеробную
+:имеетГардеробную rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :имеетГараж .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#имеетДверь
+:имеетДверь rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :Комната ;
+            rdfs:domain :Комната ;
+            rdfs:range [ rdf:type owl:Class ;
+                         owl:unionOf ( [ rdf:type owl:Restriction ;
+                                         owl:onProperty :имеетПроем ;
+                                         owl:someValuesFrom :Проем
+                                       ]
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :имеетДверь ;
+                                         owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                         owl:onClass :Дверь
+                                       ]
+                                     )
+                       ] .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#имеетДлину
+:имеетДлину rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#имеетКомнату
+:имеетКомнату rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :Дом ;
+              rdfs:domain :Дом ;
+              rdfs:range [ rdf:type owl:Restriction ;
+                           owl:onProperty :имеетКомнату ;
+                           owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :ЖилаяКомната
+                         ] .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#имеетКоридор
+:имеетКоридор rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :Дом ;
+              rdfs:domain :Дом ;
+              rdfs:range [ rdf:type owl:Restriction ;
+                           owl:onProperty :имеетКоридор ;
+                           owl:someValuesFrom :Коридор
+                         ] .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#имеетКотельную
+:имеетКотельную rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :Дом ;
+                rdfs:domain :Дом ;
+                rdfs:range [ rdf:type owl:Restriction ;
+                             owl:onProperty :имеетКотельную ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :Котельная
+                           ] .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#имеетКрыльцо
+:имеетКрыльцо rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :Дом .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#имеетКухню
+:имеетКухню rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :Дом ;
+            rdfs:domain :Дом ;
+            rdfs:range [ rdf:type owl:Restriction ;
+                         owl:onProperty :имеетКухню ;
+                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass :Кухня
+                       ] .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#имеетЛестницу
+:имеетЛестницу rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :Дом ;
+               rdfs:domain :Дом ;
+               rdfs:range [ rdf:type owl:Restriction ;
+                            owl:onProperty :имеетЛестницу ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :Лестница
+                          ] .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#имеетОкно
+:имеетОкно rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :Комната ;
+           rdfs:domain :Комната ;
+           rdfs:range [ rdf:type owl:Restriction ;
+                        owl:onProperty :имеетОкно ;
+                        owl:someValuesFrom :Окно
+                      ] .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#имеетПрихожую
+:имеетПрихожую rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :Дом ;
+               rdfs:domain :Дом ;
+               rdfs:range [ rdf:type owl:Restriction ;
+                            owl:onProperty :имеетПрихожую ;
+                            owl:someValuesFrom :Прихожая
+                          ] .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#имеетПроем
+:имеетПроем rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :Комната ;
+            rdfs:domain :Комната ;
+            rdfs:range [ rdf:type owl:Restriction ;
+                         owl:onProperty :имеетПроем ;
+                         owl:someValuesFrom :Проем
+                       ] .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#имеетСанУзел
+:имеетСанУзел rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :Дом ;
+              rdfs:domain :Дом ;
+              rdfs:range [ rdf:type owl:Restriction ;
+                           owl:onProperty :имеетСанУзел ;
+                           owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :СанУзел
+                         ] .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#имеетСтену
+:имеетСтену rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :Комната ;
+            rdfs:domain :Комната ;
+            rdfs:range [ rdf:type owl:Restriction ;
+                         owl:onProperty :имеетСтену ;
+                         owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger ;
+                         owl:onClass :Стена
+                       ] .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#имеетТеррасу
+:имеетТеррасу rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :Дом .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#имеетШирину
+:имеетШирину rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#количествоКомнат
+:количествоКомнат rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :Дом ;
+                  rdfs:domain :Дом ;
+                  rdfs:range [ rdf:type owl:Restriction ;
+                               owl:onProperty :количествоКомнат ;
+                               owl:someValuesFrom :Комната
+                             ] .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/dande/ontologies/house#id
+:id rdf:type owl:DatatypeProperty ;
+    rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Высота
+:Высота rdf:type owl:DatatypeProperty ;
+        rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Длина
+:Длина rdf:type owl:DatatypeProperty ;
+       rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Количество
+:Количество rdf:type owl:DatatypeProperty ;
+            rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#КоличествоКомнат
+:КоличествоКомнат rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Дом ;
+                  rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#КоличествоСанУзлов
+:КоличествоСанУзлов rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf owl:topDataProperty ;
+                    rdfs:domain :Дом ;
+                    rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#КоличествоЭтажей
+:КоличествоЭтажей rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#КомнатаПервыйЭтаж
+:КомнатаПервыйЭтаж rdf:type owl:DatatypeProperty ;
+                   rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#НаличиеТеррас
+:НаличиеТеррас rdf:type owl:DatatypeProperty ;
+               rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Освещенность
+:Освещенность rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Дом ;
+              rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Площадь
+:Площадь rdf:type owl:DatatypeProperty ;
+         rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#СмежныеКомнаты
+:СмежныеКомнаты rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Дом ;
+                rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Ширина
+:Ширина rdf:type owl:DatatypeProperty ;
+        rdfs:range xsd:int .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/dande/ontologies/house#Балкон
+:Балкон rdf:type owl:Class ;
+        rdfs:subClassOf :ЧастиДома .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Бревно
+:Бревно rdf:type owl:Class ;
+        rdfs:subClassOf :МатериалСтен .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Брус
+:Брус rdf:type owl:Class ;
+      rdfs:subClassOf :МатериалСтен .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Ванная
+:Ванная rdf:type owl:Class ;
+        rdfs:subClassOf :СанУзел .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Винтовая
+:Винтовая rdf:type owl:Class ;
+          rdfs:subClassOf :ТипЛестницы .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#ВнешняяЛестница
+:ВнешняяЛестница rdf:type owl:Class ;
+                 rdfs:subClassOf :Лестница .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#ВнутренняяЛестница
+:ВнутренняяЛестница rdf:type owl:Class ;
+                    rdfs:subClassOf :Лестница .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Газоблоки
+:Газоблоки rdf:type owl:Class ;
+           rdfs:subClassOf :МатериалСтен .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Гараж
+:Гараж rdf:type owl:Class ;
+       rdfs:subClassOf :ЧастиДома .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Гардеробная
+:Гардеробная rdf:type owl:Class ;
+             rdfs:subClassOf :Комната .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Гостинная
+:Гостинная rdf:type owl:Class ;
+           rdfs:subClassOf :Комната .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Дверь
+:Дверь rdf:type owl:Class ;
+       rdfs:subClassOf :Составляющие ;
+       owl:disjointWith :Окно ,
+:Пол ,
+:Потолок ,
+:Проем ,
+:Стена .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Двухмаршевая
+:Двухмаршевая rdf:type owl:Class ;
+              rdfs:subClassOf :ТипЛестницы .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Дом
+:Дом rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#ЖилаяКомната
+:ЖилаяКомната rdf:type owl:Class ;
+              rdfs:subClassOf :Комната ;
+              owl:disjointWith :Коридор ,
+:Котельная ,
+:Кухня ,
+:Прихожая ,
+:СанУзел .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Кирпич
+:Кирпич rdf:type owl:Class ;
+        rdfs:subClassOf :МатериалСтен .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Комната
+:Комната rdf:type owl:Class ;
+         rdfs:subClassOf :Дом ;
+         owl:disjointWith :Крыша ,
+:Лестница ,
+:Фундамент .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Коридор
+:Коридор rdf:type owl:Class ;
+         rdfs:subClassOf :Комната ;
+         owl:disjointWith :Котельная ,
+:Кухня ,
+:Кухня-гостинная ,
+:СанУзел .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Котельная
+:Котельная rdf:type owl:Class ;
+           rdfs:subClassOf :Комната ;
+           owl:disjointWith :Кухня ,
+:Кухня-гостинная ,
+:Прихожая ,
+:СанУзел .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Крыльцо
+:Крыльцо rdf:type owl:Class ;
+         rdfs:subClassOf :ЧастиДома .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Крыша
+:Крыша rdf:type owl:Class ;
+       rdfs:subClassOf :ЧастиДома ;
+       owl:disjointWith :Лестница ,
+:Составляющие ,
+:Фундамент .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Кухня
+:Кухня rdf:type owl:Class ;
+       rdfs:subClassOf :Комната ;
+       owl:disjointWith :Кухня-гостинная ,
+:Прихожая ,
+:СанУзел .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Кухня-гостинная
+:Кухня-гостинная rdf:type owl:Class ;
+                 rdfs:subClassOf :Комната ;
+                 owl:disjointWith :Прихожая ,
+:СанУзел .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Лестница
+:Лестница rdf:type owl:Class ;
+          rdfs:subClassOf :ЧастиДома ;
+          owl:disjointWith :Составляющие ,
+:Фундамент .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#МатериалСтен
+:МатериалСтен rdf:type owl:Class ;
+              rdfs:subClassOf :ЧастиДома .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Металл
+:Металл rdf:type owl:Class ;
+        rdfs:subClassOf :МатериалСтен .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Одномаршевая
+:Одномаршевая rdf:type owl:Class ;
+              rdfs:subClassOf :ТипЛестницы .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Окно
+:Окно rdf:type owl:Class ;
+      rdfs:subClassOf :Составляющие ;
+      owl:disjointWith :Пол ,
+:Потолок ,
+:Проем ,
+:Стена .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Пеноблоки
+:Пеноблоки rdf:type owl:Class ;
+           rdfs:subClassOf :МатериалСтен .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Подвал
+:Подвал rdf:type owl:Class ;
+        rdfs:subClassOf :Комната .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Пол
+:Пол rdf:type owl:Class ;
+     rdfs:subClassOf :Составляющие ;
+     owl:disjointWith :Потолок ,
+:Проем ,
+:Стена .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Потолок
+:Потолок rdf:type owl:Class ;
+         rdfs:subClassOf :Составляющие ;
+         owl:disjointWith :Проем ,
+:Стена .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Прихожая
+:Прихожая rdf:type owl:Class ;
+          rdfs:subClassOf :Комната ;
+          owl:disjointWith :СанУзел .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Проем
+:Проем rdf:type owl:Class ;
+       rdfs:subClassOf :Составляющие ;
+       owl:disjointWith :Стена .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#СанУзел
+:СанУзел rdf:type owl:Class ;
+         rdfs:subClassOf :Комната .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#СовмещенныйСанУзел
+:СовмещенныйСанУзел rdf:type owl:Class ;
+                    rdfs:subClassOf :СанУзел .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Составляющие
+:Составляющие rdf:type owl:Class ;
+              rdfs:subClassOf :Комната ;
+              owl:disjointWith :Фундамент .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Стена
+:Стена rdf:type owl:Class ;
+       rdfs:subClassOf :Составляющие .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Сэндвич-панели
+:Сэндвич-панели rdf:type owl:Class ;
+                rdfs:subClassOf :МатериалСтен .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Терраса
+:Терраса rdf:type owl:Class ;
+         rdfs:subClassOf :ЧастиДома .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#ТипЛестницы
+:ТипЛестницы rdf:type owl:Class ;
+             rdfs:subClassOf :ВнутренняяЛестница .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Трехмаршевая
+:Трехмаршевая rdf:type owl:Class ;
+              rdfs:subClassOf :ТипЛестницы .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Туалет
+:Туалет rdf:type owl:Class ;
+        rdfs:subClassOf :СанУзел .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Фундамент
+:Фундамент rdf:type owl:Class ;
+           rdfs:subClassOf :ЧастиДома .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#ЧастиДома
+:ЧастиДома rdf:type owl:Class ;
+           rdfs:subClassOf :Дом .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Чердак
+:Чердак rdf:type owl:Class ;
+        rdfs:subClassOf :Комната .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#ЭкспериментальныеМатериалы
+:ЭкспериментальныеМатериалы rdf:type owl:Class ;
+                            rdfs:subClassOf :МатериалСтен .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/dande/ontologies/house#z42
+:z42 rdf:type owl:NamedIndividual ,
+              :Дом ;
+     :имеетКомнату :Ком1015 ,
+:Ком11455 ;
+     :имеетКухню :Кух7 ;
+     :имеетПрихожую :При4 ;
+     :имеетСанУзел :Сан4 ;
+     :КоличествоКомнат "2"^^xsd:int ;
+     :КоличествоСанУзлов "1"^^xsd:int ;
+     :КоличествоЭтажей "1"^^xsd:int ;
+     :КомнатаПервыйЭтаж "true"^^xsd:boolean ;
+     :Площадь "43"^^xsd:int ;
+     :СмежныеКомнаты "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#z458
+:z458 rdf:type owl:NamedIndividual ,
+               :Дом ;
+      :имеетГараж :Гар207 ;
+      :имеетГардеробную :Гард24 ,
+:Гард25 ;
+      :имеетКомнату :Ком104 ,
+:Ком121 ,
+:Ком160 ;
+      :имеетКоридор :Кор38 ,
+:Кор94 ;
+      :имеетКотельную :Кот61 ;
+      :имеетКрыльцо :Кры10 ;
+      :имеетКухню :КухГос402 ;
+      :имеетПрихожую :При41 ;
+      :имеетСанУзел :Сан19 ,
+:Сан27 ,
+:Сан68 ;
+      :имеетТеррасу :Тер242 ;
+      :Длина "1503"^^xsd:int ;
+      :КоличествоКомнат "4"^^xsd:int ;
+      :КоличествоСанУзлов "3"^^xsd:int ;
+      :КоличествоЭтажей "1"^^xsd:int ;
+      :КомнатаПервыйЭтаж "true"^^xsd:boolean ;
+      :Площадь "146"^^xsd:int ;
+      :СмежныеКомнаты "true"^^xsd:boolean ;
+      :Ширина "1763"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#z55
+:z55 rdf:type owl:NamedIndividual ,
+              :Дом ;
+     :имеетКомнату :Ком180 ,
+:Ком181 ,
+:Ком255 ;
+     :имеетКоридор :Кор57 ;
+     :имеетКотельную :Кот49 ;
+     :имеетКухню :Кух76 ;
+     :имеетПрихожую :При38 ;
+     :имеетСанУзел :Сан58 ;
+     :имеетТеррасу :Тер347 ;
+     :КоличествоКомнат "3"^^xsd:int ;
+     :КоличествоСанУзлов "1"^^xsd:int ;
+     :КоличествоЭтажей "1"^^xsd:int ;
+     :КомнатаПервыйЭтаж "true"^^xsd:boolean ;
+     :Площадь "103"^^xsd:int ;
+     :СмежныеКомнаты "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#z7_35
+:z7_35 rdf:type owl:NamedIndividual ,
+                :Дом ;
+       :имеетКомнату :Ком10 ,
+:Ком11 ,
+:Ком13 ,
+:Ком22 ;
+       :имеетКоридор :Кор12 ;
+       :имеетКотельную :Кот297 ;
+       :имеетКрыльцо :Кры6 ;
+       :имеетКухню :Кух5 ;
+       :имеетПрихожую :При3 ;
+       :имеетСанУзел :Сан5 ;
+       :имеетТеррасу :Тер155 ;
+       :КоличествоКомнат "4"^^xsd:int ;
+       :КоличествоСанУзлов "1"^^xsd:int ;
+       :КоличествоЭтажей "1"^^xsd:int ;
+       :КомнатаПервыйЭтаж "true"^^xsd:boolean ;
+       :Площадь "85"^^xsd:int ;
+       :СмежныеКомнаты "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Гар207
+:Гар207 rdf:type owl:NamedIndividual ,
+                 :Гараж ;
+        :Длина "342"^^xsd:int ;
+        :Площадь "207000"^^xsd:int ;
+        :Ширина "605"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Гард24
+:Гард24 rdf:type owl:NamedIndividual ,
+                 :Гардеробная ;
+        :Площадь "24000"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Гард25
+:Гард25 rdf:type owl:NamedIndividual ,
+                 :Гардеробная ;
+        :Площадь "25000"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Гос262
+:Гос262 rdf:type owl:NamedIndividual ,
+                 :Гостинная .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Д129
+:Д129 rdf:type owl:NamedIndividual ,
+               :Дверь ;
+      :Ширина "129"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Д69
+:Д69 rdf:type owl:NamedIndividual ,
+              :Дверь ;
+     :Ширина "69"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Д79
+:Д79 rdf:type owl:NamedIndividual ,
+              :Дверь ;
+     :Ширина "79"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Д89
+:Д89 rdf:type owl:NamedIndividual ,
+              :Дверь ;
+     :Ширина "89"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Д99
+:Д99 rdf:type owl:NamedIndividual ,
+              :Дверь .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Ком10
+:Ком10 rdf:type owl:NamedIndividual ,
+                :ЖилаяКомната ;
+       :имеетДверь :Д89 ;
+       :имеетОкно :О150 ;
+       :Длина "300"^^xsd:int ;
+       :Ширина "102000"^^xsd:int ,
+"340"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Ком1015
+:Ком1015 rdf:type owl:NamedIndividual ,
+                  :ЖилаяКомната ;
+         :имеетДверь :Д89 ;
+         :имеетОкно :О210 ;
+         :Длина "350"^^xsd:int ;
+         :Ширина "101500"^^xsd:int ,
+"290"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Ком104
+:Ком104 rdf:type owl:NamedIndividual ,
+                 :ЖилаяКомната ;
+        :имеетДверь :Д89 ;
+        :имеетОкно :О135 ;
+        :Длина "325"^^xsd:int ;
+        :Площадь "104000"^^xsd:int ;
+        :Ширина "320"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Ком11
+:Ком11 rdf:type owl:NamedIndividual ,
+                :ЖилаяКомната ;
+       :имеетДверь :Д89 ;
+       :имеетОкно :О150 ;
+       :Длина "285"^^xsd:int ;
+       :Площадь "111150"^^xsd:int ;
+       :Ширина "390"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Ком11455
+:Ком11455 rdf:type owl:NamedIndividual ,
+                   :ЖилаяКомната ;
+          :имеетОкно :О210 ;
+          :имеетПроем :П240 ;
+          :Длина "395"^^xsd:int ;
+          :Площадь "114550"^^xsd:int ;
+          :Ширина "290"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Ком121
+:Ком121 rdf:type owl:NamedIndividual ,
+                 :ЖилаяКомната ;
+        :имеетОкно :О90 ;
+        :Длина "455"^^xsd:int ;
+        :Ширина "267"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Ком13
+:Ком13 rdf:type owl:NamedIndividual ,
+                :ЖилаяКомната ;
+       :имеетДверь :Д129 ;
+       :имеетОкно :О210 ;
+       :Длина "400"^^xsd:int ;
+       :Площадь "136000"^^xsd:int ;
+       :Ширина "340"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Ком160
+:Ком160 rdf:type owl:NamedIndividual ,
+                 :ЖилаяКомната ;
+        :имеетДверь :Д89 ;
+        :имеетОкно :О210 ;
+        :Длина "455"^^xsd:int ;
+        :Площадь "160000"^^xsd:int ;
+        :Ширина "320"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Ком180
+:Ком180 rdf:type owl:NamedIndividual ,
+                 :ЖилаяКомната ;
+        :имеетДверь :Д89 ;
+        :имеетОкно :О210 ;
+        :Длина "449"^^xsd:int ;
+        :Площадь "180492"^^xsd:int ;
+        :Ширина "402"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Ком181
+:Ком181 rdf:type owl:NamedIndividual ,
+                 :ЖилаяКомната ;
+        :имеетДверь :Д89 ;
+        :имеетОкно :О210 ;
+        :Длина "449"^^xsd:int ;
+        :Площадь "180947"^^xsd:int ;
+        :Ширина "403"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Ком22
+:Ком22 rdf:type owl:NamedIndividual ,
+                :ЖилаяКомната ;
+       :имеетОкно :О210 ;
+       :имеетПроем :П400 ;
+       :Длина "425"^^xsd:int ;
+       :Ширина "340"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Ком255
+:Ком255 rdf:type owl:NamedIndividual ,
+                 :ЖилаяКомната ;
+        :Длина "525"^^xsd:int ;
+        :Площадь "254625"^^xsd:int ;
+        :Ширина "485"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Кор12
+:Кор12 rdf:type owl:NamedIndividual ,
+                :Коридор ;
+       :Площадь "122800"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Кор38
+:Кор38 rdf:type owl:NamedIndividual ,
+                :Коридор ;
+       :Длина "260"^^xsd:int ;
+       :Ширина "140"^^xsd:int ,
+                "38000"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Кор57
+:Кор57 rdf:type owl:NamedIndividual ,
+                :Коридор ;
+       :Площадь "57730"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Кор94
+:Кор94 rdf:type owl:NamedIndividual ,
+                :Коридор ;
+       :Площадь "94000"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Кот297
+:Кот297 rdf:type owl:NamedIndividual ,
+                 :Котельная ;
+        :имеетДверь :Д69 ;
+        :имеетОкно :О60 ;
+        :Длина "135"^^xsd:int ;
+        :Площадь "36300"^^xsd:int ;
+        :Ширина "220"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Кот49
+:Кот49 rdf:type owl:NamedIndividual ,
+                :Котельная ;
+       :имеетДверь :Д89 ;
+       :имеетОкно :О60 ;
+       :Длина "211"^^xsd:int ;
+       :Площадь "49000"^^xsd:int ;
+       :Ширина "280"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Кот61
+:Кот61 rdf:type owl:NamedIndividual ,
+                :Котельная ;
+       :Площадь "61000"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Кры10
+:Кры10 rdf:type owl:NamedIndividual ,
+                :Крыльцо ;
+       :Площадь "100000"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Кры6
+:Кры6 rdf:type owl:NamedIndividual ,
+               :Крыльцо ;
+      :Площадь "60000"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Кух5
+:Кух5 rdf:type owl:NamedIndividual ,
+               :Кухня ;
+      :имеетОкно :О150 ;
+      :имеетПроем :П240 ;
+      :Длина "270"^^xsd:int ;
+      :Площадь "59400"^^xsd:int ;
+      :Ширина "220"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Кух7
+:Кух7 rdf:type owl:NamedIndividual ,
+               :Кухня ;
+      :имеетОкно :О150 ;
+      :имеетПроем :П240 ;
+      :Длина "347"^^xsd:int ;
+      :Площадь "74605"^^xsd:int ;
+      :Ширина "215"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Кух76
+:Кух76 rdf:type owl:NamedIndividual ,
+                :Кухня ;
+       :имеетДверь :Д99 ;
+       :имеетОкно :О150 ;
+       :Длина "270"^^xsd:int ;
+       :Площадь "76720"^^xsd:int ;
+       :Ширина "280"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#КухГос402
+:КухГос402 rdf:type owl:NamedIndividual ,
+                    :Кухня-гостинная ;
+           :имеетДверь :Д69 ;
+           :имеетОкно :О800 ,
+:О90 ;
+           :имеетПроем :П120 ;
+           :Длина "455"^^xsd:int ;
+           :Площадь "402000"^^xsd:int ;
+           :Ширина "885"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#О135
+:О135 rdf:type owl:NamedIndividual ,
+               :Окно ;
+      :Высота "135"^^xsd:int ;
+      :Ширина "135"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#О150
+:О150 rdf:type owl:NamedIndividual ,
+               :Окно ;
+      :Высота "135"^^xsd:int ;
+      :Ширина "150"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#О210
+:О210 rdf:type owl:NamedIndividual ,
+               :Окно ;
+      :Длина "135"^^xsd:int ;
+      :Ширина "210"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#О60
+:О60 rdf:type owl:NamedIndividual ,
+              :Окно ;
+     :Высота "60"^^xsd:int ;
+     :Ширина "60"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#О800
+:О800 rdf:type owl:NamedIndividual ,
+               :Окно .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#О90
+:О90 rdf:type owl:NamedIndividual ,
+              :Окно ;
+     :Высота "60"^^xsd:int ;
+     :Ширина "90"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#П120
+:П120 rdf:type owl:NamedIndividual ,
+               :Проем .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#П240
+:П240 rdf:type owl:NamedIndividual ,
+               :Проем ;
+      :Ширина "240"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#П400
+:П400 rdf:type owl:NamedIndividual ,
+               :Проем ;
+      :Ширина "400"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#При3
+:При3 rdf:type owl:NamedIndividual ,
+               :Прихожая ;
+      :имеетДверь :Д89 ,
+:Д99 ;
+      :Длина "205"^^xsd:int ;
+      :Площадь "34850"^^xsd:int ;
+      :Ширина "170"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#При38
+:При38 rdf:type owl:NamedIndividual ,
+                :Прихожая ;
+       :имеетДверь :Д89 ,
+:Д99 ;
+       :Длина "205"^^xsd:int ;
+       :Площадь "38950"^^xsd:int ;
+       :Ширина "190"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#При4
+:При4 rdf:type owl:NamedIndividual ,
+               :Прихожая ;
+      :имеетДверь :Д99 ;
+      :Длина "188"^^xsd:int ,
+"40420"^^xsd:int ;
+      :Ширина "215"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#При41
+:При41 rdf:type owl:NamedIndividual ,
+                :Прихожая ;
+       :Длина "130"^^xsd:int ;
+       :Площадь "41000"^^xsd:int ;
+       :Ширина "267"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Сан19
+:Сан19 rdf:type owl:NamedIndividual ,
+                :Туалет ;
+       :Длина "175"^^xsd:int ;
+       :Площадь "19000"^^xsd:int ;
+       :Ширина "110"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Сан27
+:Сан27 rdf:type owl:NamedIndividual ,
+                :СовмещенныйСанУзел ;
+       :имеетДверь :Д79 ;
+       :Длина "160"^^xsd:int ;
+       :Площадь "27000"^^xsd:int ;
+       :Ширина "168"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Сан4
+:Сан4 rdf:type owl:NamedIndividual ,
+               :СовмещенныйСанУзел ;
+      :имеетДверь :Д79 ;
+      :имеетОкно :О60 ;
+      :Длина "200"^^xsd:int ;
+      :Площадь "43000"^^xsd:int ;
+      :Ширина "215"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Сан5
+:Сан5 rdf:type owl:NamedIndividual ,
+               :СовмещенныйСанУзел ;
+      :имеетДверь :Д79 ;
+      :имеетОкно :О90 ;
+      :Длина "210"^^xsd:int ;
+      :Площадь "54600"^^xsd:int ;
+      :Ширина "260"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Сан58
+:Сан58 rdf:type owl:NamedIndividual ,
+                :СовмещенныйСанУзел ;
+       :имеетДверь :Д79 ;
+       :имеетОкно :О60 ;
+       :Длина "205"^^xsd:int ;
+       :Площадь "58425"^^xsd:int ;
+       :Ширина "285"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Сан68
+:Сан68 rdf:type owl:NamedIndividual ,
+                :СовмещенныйСанУзел ;
+       :имеетДверь :Д79 ;
+       :имеетОкно :О60 ;
+       :Длина "325"^^xsd:int ;
+       :Площадь "68000"^^xsd:int ;
+       :Ширина "210"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Тер155
+:Тер155 rdf:type owl:NamedIndividual ,
+                 :Терраса ;
+        :Площадь "155000"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Тер242
+:Тер242 rdf:type owl:NamedIndividual ,
+                 :Терраса ;
+        :Площадь "242000"^^xsd:int .
+
+
+###  http://www.semanticweb.org/dande/ontologies/house#Тер347
+:Тер347 rdf:type owl:NamedIndividual ,
+                 :Терраса ;
+        :Площадь "34"^^xsd:int .
+
+
+###  Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi

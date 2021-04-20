@@ -1,0 +1,2467 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/dande/ontologies/house"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/dande/ontologies/house">
+    <Prefix name="" IRI="http://www.semanticweb.org/dande/ontologies/house"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Балкон"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Бревно"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Брус"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ванная"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Винтовая"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ВнешняяЛестница"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ВнутренняяЛестница"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Газоблоки"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Гараж"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Гардеробная"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Гостинная"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Дверь"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Двухмаршевая"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Дом"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ЖилаяКомната"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Кирпич"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Комната"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Коридор"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Котельная"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Крыльцо"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Крыша"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Кухня"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Кухня-гостинная"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Лестница"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#МатериалСтен"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Металл"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Одномаршевая"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Окно"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Пеноблоки"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Подвал"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Пол"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Потолок"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Прихожая"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Проем"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#СанУзел"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#СовмещенныйСанУзел"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Составляющие"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Стена"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Сэндвич-панели"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Терраса"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ТипЛестницы"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Трехмаршевая"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Туалет"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Фундамент"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ЧастиДома"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Чердак"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ЭкспериментальныеМатериалы"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Дом"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Комната"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#имеет"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#имеетВысоту"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#имеетГараж"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#имеетГардеробную"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#имеетДверь"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#имеетДлину"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#имеетКомнату"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#имеетКоридор"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#имеетКотельную"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#имеетКрыльцо"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#имеетКухню"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#имеетЛестницу"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#имеетОкно"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#имеетПрихожую"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#имеетПроем"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#имеетСанУзел"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#имеетСтену"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#имеетТеррасу"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#имеетШирину"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#количествоКомнат"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Высота"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Длина"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Количество"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#КоличествоКомнат"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#КоличествоСанУзлов"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#КоличествоЭтажей"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#КомнатаПервыйЭтаж"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#НаличиеТеррас"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Освещенность"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Площадь"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#СмежныеКомнаты"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Ширина"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#z42"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#z458"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#z55"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#z7_35"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Гар207"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Гард24"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Гард25"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Гос262"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Д129"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Д69"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Д79"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Д89"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Д99"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ком10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ком1015"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ком104"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ком11"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ком11455"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ком121"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ком13"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ком160"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ком180"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ком181"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ком22"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ком255"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Кор12"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Кор38"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Кор57"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Кор94"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Кот297"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Кот49"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Кот61"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Кры10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Кры6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Кух5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Кух7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Кух76"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#КухГос402"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#О135"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#О150"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#О210"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#О60"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#О800"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#О90"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#П120"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#П240"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#П400"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#При3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#При38"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#При4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#При41"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Сан19"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Сан27"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Сан4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Сан5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Сан58"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Сан68"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Тер155"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Тер242"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Тер347"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Балкон"/>
+        <Class IRI="#ЧастиДома"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Бревно"/>
+        <Class IRI="#МатериалСтен"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Брус"/>
+        <Class IRI="#МатериалСтен"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ванная"/>
+        <Class IRI="#СанУзел"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Винтовая"/>
+        <Class IRI="#ТипЛестницы"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ВнешняяЛестница"/>
+        <Class IRI="#Лестница"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ВнутренняяЛестница"/>
+        <Class IRI="#Лестница"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Газоблоки"/>
+        <Class IRI="#МатериалСтен"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Гараж"/>
+        <Class IRI="#ЧастиДома"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Гардеробная"/>
+        <Class IRI="#Комната"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Гостинная"/>
+        <Class IRI="#Комната"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Дверь"/>
+        <Class IRI="#Составляющие"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Двухмаршевая"/>
+        <Class IRI="#ТипЛестницы"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ЖилаяКомната"/>
+        <Class IRI="#Комната"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Кирпич"/>
+        <Class IRI="#МатериалСтен"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Комната"/>
+        <Class IRI="#Дом"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Коридор"/>
+        <Class IRI="#Комната"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Котельная"/>
+        <Class IRI="#Комната"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Крыльцо"/>
+        <Class IRI="#ЧастиДома"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Крыша"/>
+        <Class IRI="#ЧастиДома"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Кухня"/>
+        <Class IRI="#Комната"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Кухня-гостинная"/>
+        <Class IRI="#Комната"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Лестница"/>
+        <Class IRI="#ЧастиДома"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#МатериалСтен"/>
+        <Class IRI="#ЧастиДома"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Металл"/>
+        <Class IRI="#МатериалСтен"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Одномаршевая"/>
+        <Class IRI="#ТипЛестницы"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Окно"/>
+        <Class IRI="#Составляющие"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Пеноблоки"/>
+        <Class IRI="#МатериалСтен"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Подвал"/>
+        <Class IRI="#Комната"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Пол"/>
+        <Class IRI="#Составляющие"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Потолок"/>
+        <Class IRI="#Составляющие"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Прихожая"/>
+        <Class IRI="#Комната"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Проем"/>
+        <Class IRI="#Составляющие"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#СанУзел"/>
+        <Class IRI="#Комната"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#СовмещенныйСанУзел"/>
+        <Class IRI="#СанУзел"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Составляющие"/>
+        <Class IRI="#Комната"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Стена"/>
+        <Class IRI="#Составляющие"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Сэндвич-панели"/>
+        <Class IRI="#МатериалСтен"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Терраса"/>
+        <Class IRI="#ЧастиДома"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ТипЛестницы"/>
+        <Class IRI="#ВнутренняяЛестница"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Трехмаршевая"/>
+        <Class IRI="#ТипЛестницы"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Туалет"/>
+        <Class IRI="#СанУзел"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Фундамент"/>
+        <Class IRI="#ЧастиДома"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ЧастиДома"/>
+        <Class IRI="#Дом"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Чердак"/>
+        <Class IRI="#Комната"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ЭкспериментальныеМатериалы"/>
+        <Class IRI="#МатериалСтен"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Дверь"/>
+        <Class IRI="#Окно"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Дверь"/>
+        <Class IRI="#Пол"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Дверь"/>
+        <Class IRI="#Потолок"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Дверь"/>
+        <Class IRI="#Проем"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Дверь"/>
+        <Class IRI="#Стена"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ЖилаяКомната"/>
+        <Class IRI="#Коридор"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ЖилаяКомната"/>
+        <Class IRI="#Котельная"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ЖилаяКомната"/>
+        <Class IRI="#Кухня"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ЖилаяКомната"/>
+        <Class IRI="#Прихожая"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ЖилаяКомната"/>
+        <Class IRI="#СанУзел"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Комната"/>
+        <Class IRI="#Крыша"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Комната"/>
+        <Class IRI="#Лестница"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Комната"/>
+        <Class IRI="#Фундамент"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Коридор"/>
+        <Class IRI="#Котельная"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Коридор"/>
+        <Class IRI="#Кухня"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Коридор"/>
+        <Class IRI="#Кухня-гостинная"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Коридор"/>
+        <Class IRI="#СанУзел"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Котельная"/>
+        <Class IRI="#Кухня"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Котельная"/>
+        <Class IRI="#Кухня-гостинная"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Котельная"/>
+        <Class IRI="#Прихожая"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Котельная"/>
+        <Class IRI="#СанУзел"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Крыша"/>
+        <Class IRI="#Лестница"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Крыша"/>
+        <Class IRI="#Составляющие"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Крыша"/>
+        <Class IRI="#Фундамент"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Кухня"/>
+        <Class IRI="#Кухня-гостинная"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Кухня"/>
+        <Class IRI="#Прихожая"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Кухня"/>
+        <Class IRI="#СанУзел"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Кухня-гостинная"/>
+        <Class IRI="#Прихожая"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Кухня-гостинная"/>
+        <Class IRI="#СанУзел"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Лестница"/>
+        <Class IRI="#Составляющие"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Лестница"/>
+        <Class IRI="#Фундамент"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Окно"/>
+        <Class IRI="#Пол"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Окно"/>
+        <Class IRI="#Потолок"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Окно"/>
+        <Class IRI="#Проем"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Окно"/>
+        <Class IRI="#Стена"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Пол"/>
+        <Class IRI="#Потолок"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Пол"/>
+        <Class IRI="#Проем"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Пол"/>
+        <Class IRI="#Стена"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Потолок"/>
+        <Class IRI="#Проем"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Потолок"/>
+        <Class IRI="#Стена"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Прихожая"/>
+        <Class IRI="#СанУзел"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Проем"/>
+        <Class IRI="#Стена"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Составляющие"/>
+        <Class IRI="#Фундамент"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Дом"/>
+        <NamedIndividual IRI="#z42"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Дом"/>
+        <NamedIndividual IRI="#z458"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Дом"/>
+        <NamedIndividual IRI="#z55"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Дом"/>
+        <NamedIndividual IRI="#z7_35"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Гараж"/>
+        <NamedIndividual IRI="#Гар207"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Гардеробная"/>
+        <NamedIndividual IRI="#Гард24"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Гардеробная"/>
+        <NamedIndividual IRI="#Гард25"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Гостинная"/>
+        <NamedIndividual IRI="#Гос262"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Дверь"/>
+        <NamedIndividual IRI="#Д129"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Дверь"/>
+        <NamedIndividual IRI="#Д69"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Дверь"/>
+        <NamedIndividual IRI="#Д79"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Дверь"/>
+        <NamedIndividual IRI="#Д89"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Дверь"/>
+        <NamedIndividual IRI="#Д99"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ЖилаяКомната"/>
+        <NamedIndividual IRI="#Ком10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ЖилаяКомната"/>
+        <NamedIndividual IRI="#Ком1015"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ЖилаяКомната"/>
+        <NamedIndividual IRI="#Ком104"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ЖилаяКомната"/>
+        <NamedIndividual IRI="#Ком11"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ЖилаяКомната"/>
+        <NamedIndividual IRI="#Ком11455"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ЖилаяКомната"/>
+        <NamedIndividual IRI="#Ком121"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ЖилаяКомната"/>
+        <NamedIndividual IRI="#Ком13"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ЖилаяКомната"/>
+        <NamedIndividual IRI="#Ком160"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ЖилаяКомната"/>
+        <NamedIndividual IRI="#Ком180"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ЖилаяКомната"/>
+        <NamedIndividual IRI="#Ком181"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ЖилаяКомната"/>
+        <NamedIndividual IRI="#Ком22"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ЖилаяКомната"/>
+        <NamedIndividual IRI="#Ком255"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Коридор"/>
+        <NamedIndividual IRI="#Кор12"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Коридор"/>
+        <NamedIndividual IRI="#Кор38"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Коридор"/>
+        <NamedIndividual IRI="#Кор57"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Коридор"/>
+        <NamedIndividual IRI="#Кор94"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Котельная"/>
+        <NamedIndividual IRI="#Кот297"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Котельная"/>
+        <NamedIndividual IRI="#Кот49"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Котельная"/>
+        <NamedIndividual IRI="#Кот61"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Крыльцо"/>
+        <NamedIndividual IRI="#Кры10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Крыльцо"/>
+        <NamedIndividual IRI="#Кры6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Кухня"/>
+        <NamedIndividual IRI="#Кух5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Кухня"/>
+        <NamedIndividual IRI="#Кух7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Кухня"/>
+        <NamedIndividual IRI="#Кух76"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Кухня-гостинная"/>
+        <NamedIndividual IRI="#КухГос402"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Окно"/>
+        <NamedIndividual IRI="#О135"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Окно"/>
+        <NamedIndividual IRI="#О150"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Окно"/>
+        <NamedIndividual IRI="#О210"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Окно"/>
+        <NamedIndividual IRI="#О60"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Окно"/>
+        <NamedIndividual IRI="#О800"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Окно"/>
+        <NamedIndividual IRI="#О90"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Проем"/>
+        <NamedIndividual IRI="#П120"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Проем"/>
+        <NamedIndividual IRI="#П240"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Проем"/>
+        <NamedIndividual IRI="#П400"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Прихожая"/>
+        <NamedIndividual IRI="#При3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Прихожая"/>
+        <NamedIndividual IRI="#При38"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Прихожая"/>
+        <NamedIndividual IRI="#При4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Прихожая"/>
+        <NamedIndividual IRI="#При41"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Туалет"/>
+        <NamedIndividual IRI="#Сан19"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#СовмещенныйСанУзел"/>
+        <NamedIndividual IRI="#Сан27"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#СовмещенныйСанУзел"/>
+        <NamedIndividual IRI="#Сан4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#СовмещенныйСанУзел"/>
+        <NamedIndividual IRI="#Сан5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#СовмещенныйСанУзел"/>
+        <NamedIndividual IRI="#Сан58"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#СовмещенныйСанУзел"/>
+        <NamedIndividual IRI="#Сан68"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Терраса"/>
+        <NamedIndividual IRI="#Тер155"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Терраса"/>
+        <NamedIndividual IRI="#Тер242"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Терраса"/>
+        <NamedIndividual IRI="#Тер347"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетКомнату"/>
+        <NamedIndividual IRI="#z42"/>
+        <NamedIndividual IRI="#Ком1015"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетКомнату"/>
+        <NamedIndividual IRI="#z42"/>
+        <NamedIndividual IRI="#Ком11455"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетКухню"/>
+        <NamedIndividual IRI="#z42"/>
+        <NamedIndividual IRI="#Кух7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетПрихожую"/>
+        <NamedIndividual IRI="#z42"/>
+        <NamedIndividual IRI="#При4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетСанУзел"/>
+        <NamedIndividual IRI="#z42"/>
+        <NamedIndividual IRI="#Сан4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетГараж"/>
+        <NamedIndividual IRI="#z458"/>
+        <NamedIndividual IRI="#Гар207"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетГардеробную"/>
+        <NamedIndividual IRI="#z458"/>
+        <NamedIndividual IRI="#Гард24"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетГардеробную"/>
+        <NamedIndividual IRI="#z458"/>
+        <NamedIndividual IRI="#Гард25"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетКомнату"/>
+        <NamedIndividual IRI="#z458"/>
+        <NamedIndividual IRI="#Ком104"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетКомнату"/>
+        <NamedIndividual IRI="#z458"/>
+        <NamedIndividual IRI="#Ком121"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетКомнату"/>
+        <NamedIndividual IRI="#z458"/>
+        <NamedIndividual IRI="#Ком160"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетКоридор"/>
+        <NamedIndividual IRI="#z458"/>
+        <NamedIndividual IRI="#Кор38"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетКоридор"/>
+        <NamedIndividual IRI="#z458"/>
+        <NamedIndividual IRI="#Кор94"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетКотельную"/>
+        <NamedIndividual IRI="#z458"/>
+        <NamedIndividual IRI="#Кот61"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетКрыльцо"/>
+        <NamedIndividual IRI="#z458"/>
+        <NamedIndividual IRI="#Кры10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетКухню"/>
+        <NamedIndividual IRI="#z458"/>
+        <NamedIndividual IRI="#КухГос402"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетПрихожую"/>
+        <NamedIndividual IRI="#z458"/>
+        <NamedIndividual IRI="#При41"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетСанУзел"/>
+        <NamedIndividual IRI="#z458"/>
+        <NamedIndividual IRI="#Сан19"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетСанУзел"/>
+        <NamedIndividual IRI="#z458"/>
+        <NamedIndividual IRI="#Сан27"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетСанУзел"/>
+        <NamedIndividual IRI="#z458"/>
+        <NamedIndividual IRI="#Сан68"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетТеррасу"/>
+        <NamedIndividual IRI="#z458"/>
+        <NamedIndividual IRI="#Тер242"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетКомнату"/>
+        <NamedIndividual IRI="#z55"/>
+        <NamedIndividual IRI="#Ком180"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетКомнату"/>
+        <NamedIndividual IRI="#z55"/>
+        <NamedIndividual IRI="#Ком181"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетКомнату"/>
+        <NamedIndividual IRI="#z55"/>
+        <NamedIndividual IRI="#Ком255"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетКоридор"/>
+        <NamedIndividual IRI="#z55"/>
+        <NamedIndividual IRI="#Кор57"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетКотельную"/>
+        <NamedIndividual IRI="#z55"/>
+        <NamedIndividual IRI="#Кот49"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетКухню"/>
+        <NamedIndividual IRI="#z55"/>
+        <NamedIndividual IRI="#Кух76"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетПрихожую"/>
+        <NamedIndividual IRI="#z55"/>
+        <NamedIndividual IRI="#При38"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетСанУзел"/>
+        <NamedIndividual IRI="#z55"/>
+        <NamedIndividual IRI="#Сан58"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетТеррасу"/>
+        <NamedIndividual IRI="#z55"/>
+        <NamedIndividual IRI="#Тер347"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетКомнату"/>
+        <NamedIndividual IRI="#z7_35"/>
+        <NamedIndividual IRI="#Ком10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетКомнату"/>
+        <NamedIndividual IRI="#z7_35"/>
+        <NamedIndividual IRI="#Ком11"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетКомнату"/>
+        <NamedIndividual IRI="#z7_35"/>
+        <NamedIndividual IRI="#Ком13"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетКомнату"/>
+        <NamedIndividual IRI="#z7_35"/>
+        <NamedIndividual IRI="#Ком22"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетКоридор"/>
+        <NamedIndividual IRI="#z7_35"/>
+        <NamedIndividual IRI="#Кор12"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетКотельную"/>
+        <NamedIndividual IRI="#z7_35"/>
+        <NamedIndividual IRI="#Кот297"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетКрыльцо"/>
+        <NamedIndividual IRI="#z7_35"/>
+        <NamedIndividual IRI="#Кры6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетКухню"/>
+        <NamedIndividual IRI="#z7_35"/>
+        <NamedIndividual IRI="#Кух5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетПрихожую"/>
+        <NamedIndividual IRI="#z7_35"/>
+        <NamedIndividual IRI="#При3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетСанУзел"/>
+        <NamedIndividual IRI="#z7_35"/>
+        <NamedIndividual IRI="#Сан5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетТеррасу"/>
+        <NamedIndividual IRI="#z7_35"/>
+        <NamedIndividual IRI="#Тер155"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетДверь"/>
+        <NamedIndividual IRI="#Ком10"/>
+        <NamedIndividual IRI="#Д89"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетОкно"/>
+        <NamedIndividual IRI="#Ком10"/>
+        <NamedIndividual IRI="#О150"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетДверь"/>
+        <NamedIndividual IRI="#Ком1015"/>
+        <NamedIndividual IRI="#Д89"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетОкно"/>
+        <NamedIndividual IRI="#Ком1015"/>
+        <NamedIndividual IRI="#О210"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетДверь"/>
+        <NamedIndividual IRI="#Ком104"/>
+        <NamedIndividual IRI="#Д89"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетОкно"/>
+        <NamedIndividual IRI="#Ком104"/>
+        <NamedIndividual IRI="#О135"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетДверь"/>
+        <NamedIndividual IRI="#Ком11"/>
+        <NamedIndividual IRI="#Д89"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетОкно"/>
+        <NamedIndividual IRI="#Ком11"/>
+        <NamedIndividual IRI="#О150"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетОкно"/>
+        <NamedIndividual IRI="#Ком11455"/>
+        <NamedIndividual IRI="#О210"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетПроем"/>
+        <NamedIndividual IRI="#Ком11455"/>
+        <NamedIndividual IRI="#П240"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетОкно"/>
+        <NamedIndividual IRI="#Ком121"/>
+        <NamedIndividual IRI="#О90"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетДверь"/>
+        <NamedIndividual IRI="#Ком13"/>
+        <NamedIndividual IRI="#Д129"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетОкно"/>
+        <NamedIndividual IRI="#Ком13"/>
+        <NamedIndividual IRI="#О210"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетДверь"/>
+        <NamedIndividual IRI="#Ком160"/>
+        <NamedIndividual IRI="#Д89"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетОкно"/>
+        <NamedIndividual IRI="#Ком160"/>
+        <NamedIndividual IRI="#О210"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетДверь"/>
+        <NamedIndividual IRI="#Ком180"/>
+        <NamedIndividual IRI="#Д89"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетОкно"/>
+        <NamedIndividual IRI="#Ком180"/>
+        <NamedIndividual IRI="#О210"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетДверь"/>
+        <NamedIndividual IRI="#Ком181"/>
+        <NamedIndividual IRI="#Д89"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетОкно"/>
+        <NamedIndividual IRI="#Ком181"/>
+        <NamedIndividual IRI="#О210"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетОкно"/>
+        <NamedIndividual IRI="#Ком22"/>
+        <NamedIndividual IRI="#О210"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетПроем"/>
+        <NamedIndividual IRI="#Ком22"/>
+        <NamedIndividual IRI="#П400"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетДверь"/>
+        <NamedIndividual IRI="#Кот297"/>
+        <NamedIndividual IRI="#Д69"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетОкно"/>
+        <NamedIndividual IRI="#Кот297"/>
+        <NamedIndividual IRI="#О60"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетДверь"/>
+        <NamedIndividual IRI="#Кот49"/>
+        <NamedIndividual IRI="#Д89"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетОкно"/>
+        <NamedIndividual IRI="#Кот49"/>
+        <NamedIndividual IRI="#О60"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетОкно"/>
+        <NamedIndividual IRI="#Кух5"/>
+        <NamedIndividual IRI="#О150"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетПроем"/>
+        <NamedIndividual IRI="#Кух5"/>
+        <NamedIndividual IRI="#П240"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетОкно"/>
+        <NamedIndividual IRI="#Кух7"/>
+        <NamedIndividual IRI="#О150"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетПроем"/>
+        <NamedIndividual IRI="#Кух7"/>
+        <NamedIndividual IRI="#П240"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетДверь"/>
+        <NamedIndividual IRI="#Кух76"/>
+        <NamedIndividual IRI="#Д99"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетОкно"/>
+        <NamedIndividual IRI="#Кух76"/>
+        <NamedIndividual IRI="#О150"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетДверь"/>
+        <NamedIndividual IRI="#КухГос402"/>
+        <NamedIndividual IRI="#Д69"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетОкно"/>
+        <NamedIndividual IRI="#КухГос402"/>
+        <NamedIndividual IRI="#О800"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетОкно"/>
+        <NamedIndividual IRI="#КухГос402"/>
+        <NamedIndividual IRI="#О90"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетПроем"/>
+        <NamedIndividual IRI="#КухГос402"/>
+        <NamedIndividual IRI="#П120"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетДверь"/>
+        <NamedIndividual IRI="#При3"/>
+        <NamedIndividual IRI="#Д89"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетДверь"/>
+        <NamedIndividual IRI="#При3"/>
+        <NamedIndividual IRI="#Д99"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетДверь"/>
+        <NamedIndividual IRI="#При38"/>
+        <NamedIndividual IRI="#Д89"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетДверь"/>
+        <NamedIndividual IRI="#При38"/>
+        <NamedIndividual IRI="#Д99"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетДверь"/>
+        <NamedIndividual IRI="#При4"/>
+        <NamedIndividual IRI="#Д99"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетДверь"/>
+        <NamedIndividual IRI="#Сан27"/>
+        <NamedIndividual IRI="#Д79"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетДверь"/>
+        <NamedIndividual IRI="#Сан4"/>
+        <NamedIndividual IRI="#Д79"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетОкно"/>
+        <NamedIndividual IRI="#Сан4"/>
+        <NamedIndividual IRI="#О60"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетДверь"/>
+        <NamedIndividual IRI="#Сан5"/>
+        <NamedIndividual IRI="#Д79"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетОкно"/>
+        <NamedIndividual IRI="#Сан5"/>
+        <NamedIndividual IRI="#О90"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетДверь"/>
+        <NamedIndividual IRI="#Сан58"/>
+        <NamedIndividual IRI="#Д79"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетОкно"/>
+        <NamedIndividual IRI="#Сан58"/>
+        <NamedIndividual IRI="#О60"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетДверь"/>
+        <NamedIndividual IRI="#Сан68"/>
+        <NamedIndividual IRI="#Д79"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетОкно"/>
+        <NamedIndividual IRI="#Сан68"/>
+        <NamedIndividual IRI="#О60"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#КоличествоКомнат"/>
+        <NamedIndividual IRI="#z42"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#КоличествоСанУзлов"/>
+        <NamedIndividual IRI="#z42"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#КоличествоЭтажей"/>
+        <NamedIndividual IRI="#z42"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#КомнатаПервыйЭтаж"/>
+        <NamedIndividual IRI="#z42"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Площадь"/>
+        <NamedIndividual IRI="#z42"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">43</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#СмежныеКомнаты"/>
+        <NamedIndividual IRI="#z42"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Длина"/>
+        <NamedIndividual IRI="#z458"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1503</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#КоличествоКомнат"/>
+        <NamedIndividual IRI="#z458"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#КоличествоСанУзлов"/>
+        <NamedIndividual IRI="#z458"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#КоличествоЭтажей"/>
+        <NamedIndividual IRI="#z458"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#КомнатаПервыйЭтаж"/>
+        <NamedIndividual IRI="#z458"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Площадь"/>
+        <NamedIndividual IRI="#z458"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">146</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#СмежныеКомнаты"/>
+        <NamedIndividual IRI="#z458"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#z458"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1763</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#КоличествоКомнат"/>
+        <NamedIndividual IRI="#z55"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#КоличествоСанУзлов"/>
+        <NamedIndividual IRI="#z55"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#КоличествоЭтажей"/>
+        <NamedIndividual IRI="#z55"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#КомнатаПервыйЭтаж"/>
+        <NamedIndividual IRI="#z55"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Площадь"/>
+        <NamedIndividual IRI="#z55"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">103</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#СмежныеКомнаты"/>
+        <NamedIndividual IRI="#z55"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#КоличествоКомнат"/>
+        <NamedIndividual IRI="#z7_35"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#КоличествоСанУзлов"/>
+        <NamedIndividual IRI="#z7_35"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#КоличествоЭтажей"/>
+        <NamedIndividual IRI="#z7_35"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#КомнатаПервыйЭтаж"/>
+        <NamedIndividual IRI="#z7_35"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Площадь"/>
+        <NamedIndividual IRI="#z7_35"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">85</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#СмежныеКомнаты"/>
+        <NamedIndividual IRI="#z7_35"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Длина"/>
+        <NamedIndividual IRI="#Гар207"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">342</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Площадь"/>
+        <NamedIndividual IRI="#Гар207"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">207000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#Гар207"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">605</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Площадь"/>
+        <NamedIndividual IRI="#Гард24"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">24000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Площадь"/>
+        <NamedIndividual IRI="#Гард25"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">25000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#Д129"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">129</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#Д69"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">69</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#Д79"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">79</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#Д89"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">89</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Длина"/>
+        <NamedIndividual IRI="#Ком10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">300</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#Ком10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">102000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#Ком10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">340</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Длина"/>
+        <NamedIndividual IRI="#Ком1015"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">350</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#Ком1015"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">101500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#Ком1015"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">290</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Длина"/>
+        <NamedIndividual IRI="#Ком104"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">325</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Площадь"/>
+        <NamedIndividual IRI="#Ком104"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">104000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#Ком104"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">320</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Длина"/>
+        <NamedIndividual IRI="#Ком11"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">285</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Площадь"/>
+        <NamedIndividual IRI="#Ком11"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">111150</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#Ком11"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">390</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Длина"/>
+        <NamedIndividual IRI="#Ком11455"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">395</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Площадь"/>
+        <NamedIndividual IRI="#Ком11455"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">114550</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#Ком11455"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">290</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Длина"/>
+        <NamedIndividual IRI="#Ком121"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">455</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#Ком121"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">267</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Длина"/>
+        <NamedIndividual IRI="#Ком13"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">400</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Площадь"/>
+        <NamedIndividual IRI="#Ком13"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">136000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#Ком13"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">340</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Длина"/>
+        <NamedIndividual IRI="#Ком160"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">455</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Площадь"/>
+        <NamedIndividual IRI="#Ком160"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">160000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#Ком160"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">320</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Длина"/>
+        <NamedIndividual IRI="#Ком180"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">449</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Площадь"/>
+        <NamedIndividual IRI="#Ком180"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">180492</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#Ком180"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">402</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Длина"/>
+        <NamedIndividual IRI="#Ком181"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">449</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Площадь"/>
+        <NamedIndividual IRI="#Ком181"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">180947</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#Ком181"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">403</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Длина"/>
+        <NamedIndividual IRI="#Ком22"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">425</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#Ком22"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">340</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Длина"/>
+        <NamedIndividual IRI="#Ком255"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">525</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Площадь"/>
+        <NamedIndividual IRI="#Ком255"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">254625</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#Ком255"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">485</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Площадь"/>
+        <NamedIndividual IRI="#Кор12"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">122800</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Длина"/>
+        <NamedIndividual IRI="#Кор38"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">260</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#Кор38"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">140</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#Кор38"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">38000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Площадь"/>
+        <NamedIndividual IRI="#Кор57"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">57730</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Площадь"/>
+        <NamedIndividual IRI="#Кор94"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">94000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Длина"/>
+        <NamedIndividual IRI="#Кот297"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">135</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Площадь"/>
+        <NamedIndividual IRI="#Кот297"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">36300</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#Кот297"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">220</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Длина"/>
+        <NamedIndividual IRI="#Кот49"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">211</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Площадь"/>
+        <NamedIndividual IRI="#Кот49"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">49000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#Кот49"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">280</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Площадь"/>
+        <NamedIndividual IRI="#Кот61"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">61000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Площадь"/>
+        <NamedIndividual IRI="#Кры10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">100000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Площадь"/>
+        <NamedIndividual IRI="#Кры6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">60000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Длина"/>
+        <NamedIndividual IRI="#Кух5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">270</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Площадь"/>
+        <NamedIndividual IRI="#Кух5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">59400</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#Кух5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">220</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Длина"/>
+        <NamedIndividual IRI="#Кух7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">347</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Площадь"/>
+        <NamedIndividual IRI="#Кух7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">74605</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#Кух7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">215</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Длина"/>
+        <NamedIndividual IRI="#Кух76"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">270</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Площадь"/>
+        <NamedIndividual IRI="#Кух76"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">76720</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#Кух76"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">280</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Длина"/>
+        <NamedIndividual IRI="#КухГос402"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">455</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Площадь"/>
+        <NamedIndividual IRI="#КухГос402"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">402000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#КухГос402"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">885</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Высота"/>
+        <NamedIndividual IRI="#О135"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">135</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#О135"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">135</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Высота"/>
+        <NamedIndividual IRI="#О150"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">135</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#О150"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">150</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Длина"/>
+        <NamedIndividual IRI="#О210"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">135</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#О210"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">210</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Высота"/>
+        <NamedIndividual IRI="#О60"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#О60"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Высота"/>
+        <NamedIndividual IRI="#О90"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#О90"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">90</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#П240"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">240</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#П400"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">400</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Длина"/>
+        <NamedIndividual IRI="#При3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">205</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Площадь"/>
+        <NamedIndividual IRI="#При3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">34850</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#При3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">170</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Длина"/>
+        <NamedIndividual IRI="#При38"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">205</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Площадь"/>
+        <NamedIndividual IRI="#При38"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">38950</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#При38"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">190</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Длина"/>
+        <NamedIndividual IRI="#При4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">188</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Длина"/>
+        <NamedIndividual IRI="#При4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">40420</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#При4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">215</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Длина"/>
+        <NamedIndividual IRI="#При41"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">130</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Площадь"/>
+        <NamedIndividual IRI="#При41"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">41000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#При41"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">267</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Длина"/>
+        <NamedIndividual IRI="#Сан19"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">175</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Площадь"/>
+        <NamedIndividual IRI="#Сан19"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">19000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#Сан19"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">110</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Длина"/>
+        <NamedIndividual IRI="#Сан27"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">160</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Площадь"/>
+        <NamedIndividual IRI="#Сан27"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">27000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#Сан27"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">168</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Длина"/>
+        <NamedIndividual IRI="#Сан4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Площадь"/>
+        <NamedIndividual IRI="#Сан4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">43000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#Сан4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">215</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Длина"/>
+        <NamedIndividual IRI="#Сан5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">210</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Площадь"/>
+        <NamedIndividual IRI="#Сан5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">54600</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#Сан5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">260</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Длина"/>
+        <NamedIndividual IRI="#Сан58"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">205</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Площадь"/>
+        <NamedIndividual IRI="#Сан58"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">58425</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#Сан58"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">285</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Длина"/>
+        <NamedIndividual IRI="#Сан68"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">325</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Площадь"/>
+        <NamedIndividual IRI="#Сан68"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">68000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ширина"/>
+        <NamedIndividual IRI="#Сан68"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">210</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Площадь"/>
+        <NamedIndividual IRI="#Тер155"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">155000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Площадь"/>
+        <NamedIndividual IRI="#Тер242"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">242000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Площадь"/>
+        <NamedIndividual IRI="#Тер347"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">34</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#имеетГараж"/>
+        <ObjectProperty IRI="#Дом"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#имеетГардеробную"/>
+        <ObjectProperty IRI="#имеетГараж"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#имеетДверь"/>
+        <ObjectProperty IRI="#Комната"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#имеетКомнату"/>
+        <ObjectProperty IRI="#Дом"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#имеетКоридор"/>
+        <ObjectProperty IRI="#Дом"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#имеетКотельную"/>
+        <ObjectProperty IRI="#Дом"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#имеетКрыльцо"/>
+        <ObjectProperty IRI="#Дом"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#имеетКухню"/>
+        <ObjectProperty IRI="#Дом"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#имеетЛестницу"/>
+        <ObjectProperty IRI="#Дом"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#имеетОкно"/>
+        <ObjectProperty IRI="#Комната"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#имеетПрихожую"/>
+        <ObjectProperty IRI="#Дом"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#имеетПроем"/>
+        <ObjectProperty IRI="#Комната"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#имеетСанУзел"/>
+        <ObjectProperty IRI="#Дом"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#имеетСтену"/>
+        <ObjectProperty IRI="#Комната"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#имеетТеррасу"/>
+        <ObjectProperty IRI="#Дом"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#количествоКомнат"/>
+        <ObjectProperty IRI="#Дом"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#имеетДверь"/>
+        <Class IRI="#Комната"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#имеетКомнату"/>
+        <Class IRI="#Дом"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#имеетКоридор"/>
+        <Class IRI="#Дом"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#имеетКотельную"/>
+        <Class IRI="#Дом"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#имеетКухню"/>
+        <Class IRI="#Дом"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#имеетЛестницу"/>
+        <Class IRI="#Дом"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#имеетОкно"/>
+        <Class IRI="#Комната"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#имеетПрихожую"/>
+        <Class IRI="#Дом"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#имеетПроем"/>
+        <Class IRI="#Комната"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#имеетСанУзел"/>
+        <Class IRI="#Дом"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#имеетСтену"/>
+        <Class IRI="#Комната"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#количествоКомнат"/>
+        <Class IRI="#Дом"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#имеетДверь"/>
+        <ObjectUnionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#имеетПроем"/>
+                <Class IRI="#Проем"/>
+            </ObjectSomeValuesFrom>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#имеетДверь"/>
+                <Class IRI="#Дверь"/>
+            </ObjectMinCardinality>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#имеетКомнату"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#имеетКомнату"/>
+            <Class IRI="#ЖилаяКомната"/>
+        </ObjectMinCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#имеетКоридор"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#имеетКоридор"/>
+            <Class IRI="#Коридор"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#имеетКотельную"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#имеетКотельную"/>
+            <Class IRI="#Котельная"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#имеетКухню"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#имеетКухню"/>
+            <Class IRI="#Кухня"/>
+        </ObjectExactCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#имеетЛестницу"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#имеетЛестницу"/>
+            <Class IRI="#Лестница"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#имеетОкно"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#имеетОкно"/>
+            <Class IRI="#Окно"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#имеетПрихожую"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#имеетПрихожую"/>
+            <Class IRI="#Прихожая"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#имеетПроем"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#имеетПроем"/>
+            <Class IRI="#Проем"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#имеетСанУзел"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#имеетСанУзел"/>
+            <Class IRI="#СанУзел"/>
+        </ObjectMinCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#имеетСтену"/>
+        <ObjectExactCardinality cardinality="4">
+            <ObjectProperty IRI="#имеетСтену"/>
+            <Class IRI="#Стена"/>
+        </ObjectExactCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#количествоКомнат"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#количествоКомнат"/>
+            <Class IRI="#Комната"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#КоличествоСанУзлов"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#КоличествоКомнат"/>
+        <Class IRI="#Дом"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#КоличествоСанУзлов"/>
+        <Class IRI="#Дом"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Освещенность"/>
+        <Class IRI="#Дом"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#СмежныеКомнаты"/>
+        <Class IRI="#Дом"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#id"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Высота"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Длина"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Количество"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#КоличествоКомнат"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#КоличествоСанУзлов"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#КомнатаПервыйЭтаж"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#НаличиеТеррас"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Освещенность"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Площадь"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#СмежныеКомнаты"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Ширина"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

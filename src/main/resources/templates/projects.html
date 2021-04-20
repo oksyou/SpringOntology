@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12 col-md-12">
+            <div class="page-header">
+                <h1 th:text="Gygyk"></h1>
+            </div>
+            <div th:if="${not #lists.isEmpty(projects)}">
+                <table class="table table-hover table-bordered">
+                    <thead>
+                    <th th:text="Home"></th>
+                    <th th:text="rooms"></th>
+                    <th th:text="bathrooms"></th>
+                    <th th:text="square"></th>
+                    </thead>
+                    <tbody>
+                    <tr th:each="phone,iter : ${projects}">
+                        <td class="col-xs-1" th:text="${iter.index + 1}"></td>
+                        <td th:text="${phone.house}"></td>
+                        <td th:text="${phone.rooms}"></td>
+                        <td th:text="${phone.getBathrooms()}"></td>
+                        <td th:text="${phone.getSquare()}"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+<!--            <div th:if="${#lists.isEmpty(projects)}">-->
+<!--                <p th:text="No projects"></p>-->
+<!--            </div>-->
+
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

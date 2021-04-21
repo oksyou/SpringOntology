@@ -24,7 +24,10 @@
                     <tbody>
                     <tr th:each="phone,iter : ${projects}">
                         <td class="col-xs-1" th:text="${iter.index + 1}"></td>
-                        <td th:text="${phone.house}"></td>
+<!--                        <td th:text="${phone.house}"></td>-->
+<!--                        <td><img th:src="@{${phone.getHouse()}}"/></td>-->
+<!--                        <td><img src="../static/pictures/z55.png" width="1000" th:src="@{pictures/z55.png}"/></td>-->
+                        <td><img src="../static/pictures/z55.png" width="300" th:src="@{${phone.getHouse()}}"/></td>
                         <td th:text="${phone.rooms}"></td>
                         <td th:text="${phone.getBathrooms()}"></td>
                         <td th:text="${phone.getSquare()}"></td>

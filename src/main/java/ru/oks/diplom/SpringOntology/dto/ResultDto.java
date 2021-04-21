@@ -10,8 +10,8 @@ public class ResultDto {
         return house;
     }
 
-    public void setHouse(String house) {
-        this.house = house;
+    public void setHouse(int house) {
+        this.house = "pictures/z" +house+".png";
     }
 
     public int getRooms() {

@@ -63,29 +63,7 @@ public class IndexController {
         List<ResultDto> projects = handlingService.execute();
         model.addAttribute("projects", projects);
         return "projects";
-//        model.addAttribute("onto", onto);
-//        return "ontoResult";
     }
 
-//    @GetMapping("/")
-//    public ModelAndView index() {
-//        ModelAndView modelAndView = new ModelAndView();
-//        modelAndView.addObject("request", new RequestDto());
-//        modelAndView.setViewName("index");
-//
-//        return modelAndView;
-//    }
-//
-//    @PostMapping("/result")
-//    public ModelAndView result(@ModelAttribute RequestDto request) throws ParseException {
-//        ModelAndView modelAndView = new ModelAndView();
-//        handlingService.setRequest(request);
-//
-//        List<ResultDto> projects = handlingService.execute();
-//
-//        modelAndView.setViewName("result");
-//        modelAndView.addObject("projects", projects);
-//
-//        return modelAndView;
-//    }
+
 }

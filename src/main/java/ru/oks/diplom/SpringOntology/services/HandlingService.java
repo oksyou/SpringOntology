@@ -51,7 +51,7 @@ public class HandlingService {
                 "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n" +
                 "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n" +
                 "PREFIX a:<http://www.semanticweb.org/dande/ontologies/house#>\n" +
-                "SELECT ?home ?rooms ?bathrooms ?square\n" +
+                "SELECT ?idi ?rooms ?bathrooms ?square\n" +
                 "WHERE { " +
                 "?home a:Площадь ?square.\n" +
                 "?home a:КоличествоКомнат ?rooms.\n" +
@@ -59,6 +59,7 @@ public class HandlingService {
                 "?home a:КоличествоЭтажей ?floor.\n" +
                 "?home a:КомнатаПервыйЭтаж ?firstRoom.\n" +
                 "?home a:СмежныеКомнаты ?nearby.\n" +
+                "?home a:id ?idi.\n" +
                 terrace() +
                 garage() +
                 buildFilter()
@@ -66,7 +67,6 @@ public class HandlingService {
 
         ParameterizedSparqlString parameterizedSparqlString = new ParameterizedSparqlString();
         parameterizedSparqlString.setCommandText(queryString);
-        //parameterizedSparqlString.setLiteral("floor", request.getNumberFloors());
 
         return parameterizedSparqlString.asQuery();
     }
@@ -108,12 +108,12 @@ public class HandlingService {
     private ResultDto prepareResultDto(QuerySolution querySolution) {
         ResultDto returnDto = new ResultDto();
 
-        //Literal home=querySolution.getLiteral("house");
+        Literal home=querySolution.getLiteral("idi");
         Literal rooms = querySolution.getLiteral("rooms");
         Literal bathrooms = querySolution.getLiteral("bathrooms");
         Literal square = querySolution.getLiteral("square");
 
-        returnDto.setHouse("a");
+        returnDto.setHouse(home.getInt());
         returnDto.setRooms(rooms.getInt());
         returnDto.setBathrooms(bathrooms.getInt());
         returnDto.setSquare(square.getInt());
